@@ -1,0 +1,7 @@
+PROMPTS #1
+Actúa como un experto programador 
+full stack y agrega estilos css a este archivo html para darle una interfaz grafica
+moderna para un repositorio donde voy a subir mis proyectos pero necesito que se vea
+lo mas profesional posible en todos los aspectos adicional respetar los datos ya generados,
+
+PROMPTS #2
