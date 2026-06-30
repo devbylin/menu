@@ -5,42 +5,98 @@
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0f172a;
     color: #e2e8f0;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    line-height: 1.6;
 }
 
-.container {
-    max-width: 820px;
-    width: 100%;
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(16px);
-    border-radius: 20px;
-    padding: 60px 50px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(148, 163, 184, 0.15);
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 380px;
+    background: #1e2937;
+    padding: 40px 25px;
+    border-right: 1px solid #334155;
+}
+
+.sidebar-header h3 {
+    color: #60a5fa;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+.project-item {
+    background: #334155;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.project-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn-sidebar {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-sidebar:hover {
+    background: #60a5fa;
+    transform: translateX(5px);
+}
+
+/* Contenido Principal */
+.content {
+    flex: 1;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .logo {
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
     object-fit: contain;
-    margin: 0 auto 32px;
-    display: block;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
-                0 0 0 8px rgba(59, 130, 246, 0.15);
-    transition: transform 0.4s ease;
-}
-
-.logo:hover {
-    transform: scale(1.05) rotate(2deg);
+    margin-bottom: 35px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -50,14 +106,12 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 12px;
-    letter-spacing: -1px;
 }
 
 .author {
     font-size: 1.35rem;
     color: #94a3b8;
-    margin-bottom: 40px;
-    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .nickname {
@@ -65,70 +119,29 @@ h1 {
     font-weight: 600;
 }
 
-.description {
-    font-size: 1.15rem;
-    color: #cbd5e1;
-    max-width: 680px;
-    margin: 0 auto 50px;
-    text-align: center;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: center;
-}
-
-.project-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 460px;
-    padding: 18px 28px;
-    background: rgba(30, 64, 175, 0.9);
-    color: white;
-    text-decoration: none;
-    border-radius: 14px;
-    font-size: 1.15rem;
+.course {
+    color: #60a5fa;
     font-weight: 600;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
 }
 
-.project-btn:hover {
-    background: #3b82f6;
-    transform: translateY(-6px);
-    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.3);
-    border-color: #60a5fa;
-}
-
-.project-btn:active {
-    transform: scale(0.98);
-}
-
-/* Footer */
-.footer {
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(148, 163, 184, 0.15);
-    color: #64748b;
-    font-size: 0.95rem;
+.description {
+    max-width: 520px;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    line-height: 1.7;
 }
 
 /* Responsive */
-@media (max-width: 640px) {
-    .container {
-        padding: 40px 25px;
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
     }
-    h1 {
-        font-size: 2.3rem;
+    .sidebar {
+        width: 100%;
+        padding: 30px;
     }
-    .logo {
-        width: 130px;
-        height: 130px;
+    .content {
+        padding: 50px 30px;
     }
 }

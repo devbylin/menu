@@ -1,7 +1,11 @@
-PROMPTS #1
+PROMPTS #1 (INTERFAZ GRAFICA)
 Actúa como un experto programador 
 full stack y agrega estilos css a este archivo html para darle una interfaz grafica
 moderna para un repositorio donde voy a subir mis proyectos pero necesito que se vea
 lo mas profesional posible en todos los aspectos adicional respetar los datos ya generados,
 
-PROMPTS #2
+PROMPTS #2(BARRA LATERAL CON DESCRIPCION)
+Podemos agregar en la parte izquierda del proyecto
+donde te indique las marcas los juegos o apps 
+subidas con su botón para redirigir directamente a la pagina, adicional agregar una breve descripción
+de lo que se trata el juego o aplicación,
