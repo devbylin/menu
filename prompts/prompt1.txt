@@ -9,3 +9,7 @@ Podemos agregar en la parte izquierda del proyecto
 donde te indique las marcas los juegos o apps 
 subidas con su botón para redirigir directamente a la pagina, adicional agregar una breve descripción
 de lo que se trata el juego o aplicación,
+
+PROMPTS #3(IMAGEN COMO FONDO Y PIE DE PAGINA)
+Agrega la imagen como fondo del proyecto dame los estilos correspondientes
+y adicional agrega un pie de pagina
